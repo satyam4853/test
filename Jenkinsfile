@@ -32,7 +32,6 @@ pipeline {
                 }
             }
         }
-  stages {
     stage ('checkout') {
       steps {
         git branch: 'Development' , url: 'https://github.com/satyam4853/test.git'
