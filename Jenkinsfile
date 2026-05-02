@@ -41,8 +41,8 @@ stage('Build Docker Image') {
     steps {
         sh 'which docker'      // Should return /usr/bin/docker
         sh 'docker --version'  // Should return the version
-        sh "docker build . -t ${DOCKER_USER}/test:latest"
-        sh "docker push ${DOCKER_USER}/test:latest"
+        sh "docker build . -t satyam4853/test:latest"
+        sh "docker push satyam4853/test:latest"
     }
 }
 
