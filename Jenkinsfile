@@ -3,6 +3,13 @@ pipeline {
 tools {
         dockerTool 'my-docker' 
     }
+stage('Build Docker Image') {
+    steps {
+        sh 'which docker'      // Should return /usr/bin/docker
+        sh 'docker --version'  // Should return the version
+        sh 'docker build . -t my-app:latest'
+    }
+}
   stages {
     stage ('checkout') {
       steps {
