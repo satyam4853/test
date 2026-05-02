@@ -12,7 +12,7 @@ pipeline {
                 )]) {
                     sh '''
                     echo "Testing Git credentials..."
-                    git ls-remote https://$GIT_USER:$GIT_PASS@github.com/your-username/your-repo.git
+                    git ls-remote https://$GIT_USER:$GIT_PASS@github.com/satyam4853/test.git
                     '''
                 }
             }
